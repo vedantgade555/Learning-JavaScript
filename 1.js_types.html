@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Inline JS example -->
+        <h1>
+            <button onclick="alert('Inline JS Example')">Inline JS</button>
+
+            <!-- Internal js example -->
+
+            <button onclick="showMsg()">Internal JS</button>
+
+            <button onclick="showMsg2()">External JS</button>
+
+        </h1>
+       
+        <script>
+            function showMsg() {
+                alert('Internal JS Example');
+            }
+        </script>
+
+        <script src="JS/1.script.js"></script>
+    </body>
+</html>

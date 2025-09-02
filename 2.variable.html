@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>This is HTML </h1>
-        <script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is HTML </h1>
+    <script>
         document.write("<h1>Using script output</h1>")
     </script>
 
-        <script>
+    <script>
         // document.write("<h1>I love Pune</h1>")
         // document.write("<h1>I love Pune</h1>")
         // document.write("<h1>I love Pune</h1>")
@@ -20,7 +20,7 @@
  
     </script>
 
-        <script>
+    <script>
         let city = "I Love India"
         document.write(city);
         document.write("<br>");
@@ -40,5 +40,48 @@
         console.log(4+5);
 
     </script>
-    </body>
+
+    <script>
+      // global scope
+        var x=101;
+        let y=102;
+        const z=103;
+      function scopeExample(){
+        //  function scope
+        var x=1;
+        let y=2;
+        const z=3;
+
+        if(true){
+          var x=10;
+          let y=20;
+          const z=30;
+          // block scope
+          document.write("<br>");
+          document.write(x);//10 
+          document.write("<br>");
+          document.write(y);//20
+          document.write("<br>");
+          document.write(z);//30
+
+        }
+
+        document.write("<br>");
+        document.write(x)
+        document.write("<br>");
+        document.write(y)
+        document.write("<br>");
+        document.write(z)
+
+      }
+
+      document.write("<br>");
+          document.write(x)
+          document.write("<br>");
+          document.write(y)
+          document.write("<br>");
+          document.write(z)
+
+    </script>
+  </body>
 </html>

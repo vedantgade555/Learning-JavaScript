@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Arithmatic operator: +,-,*,%,++,--,** -->
+        <script>
+        var a=10;
+        var b=3;
+        var c= a+b;
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;
+        document.write(c);
+    </script>
+        <!--Assignment Operator =,+=,-=,*=,**=,%= -->
+        <script>
+        var x=10;
+        var y=3;
+        x+y;
+        document.write(x);
+        document.write("<br>");
+        document.write(y);
+        document.write("<br>");
+    </script>
+        <!-- Comparison Operator: ==,===,!=,!==,<,>,<=,>= -->
+        <script>
+        var p=13;
+        var q="13";
+
+        if(p==q){
+            document.write("Both are equal");
+        }else{
+            document.write("Both are not equal");
+        }
+        document.write("<br>");
+        if(p===q){
+            document.write("Both are equal");
+        }else{
+            document.write("Both are not equal");
+        }
+
+     </script>
+        <!-- Logical Operator: &&,||,! -->
+        <script>
+        // var age=100;
+        //     document.write("<br>");
+
+        // if(age>=18 && age<=100){
+        //     document.write("Eligible for vote");
+        // }else{
+        //     document.write("Not Eligible for vote");
+        // }
+
+        var day="Sunday";
+
+        if(day=="Saturday" || day=="Sunday"){
+            document.write("<br>");
+            document.write("Holiday");
+        }else{
+            document.write("<br>");
+            document.write("Working Day");
+        }
+
+        // Using Ternary Operator
+        var age=18;
+        eligibility= (age>=18) ? "Eligible for vote" : "Not Eligible for vote";
+        document.write("<br>");
+        document.write(eligibility);
+
+
+     </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var marks=prompt("Enter your marks");
+        marks=parseInt(marks);
+        if(marks>=80 && marks<=100){
+            document.write("You are in distinction");
+        }else if(marks>=60 && marks<80){
+            document.write("You are in First Class");
+        }else if(marks>=40 && marks<60){
+            document.write("You are in 2nd Class");  
+        }else{
+            document.write("You are fail");
+        }
+
+    </script> -->
+
+    <script>
+        month=prompt("Enter Month number");
+        month=parseInt(month);
+
+        if((month === 4 || month === 6 || month === 9 || month === 11)){
+            document.write("Days are 30");
+        }else if(month===2){
+            document.write("Days are 28");
+        }else if(month%2==1){
+            document.write("Days are 31");
+        }if(month<1 || month>12){
+            document.write("Invalid Month");
+        }
+    </script>
+</body>
+</html>

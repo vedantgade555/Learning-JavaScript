@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        var a= ["Vedant",20,"BCA"]
+        document.write(a+"<br>");
+        a[2]="BCS";
+        document.write(a+"<br>");
+
+        delete a[1];
+        document.write(a+"<br>");
+
+    </script>
+
+    <script>
+        var b= ["Vishal","Akash","Rohit","Ramesh","Ved","Bhavesh","Chaitan"];
+        document.write(b.sort()+"<br>");
+        asc=b.sort();
+        document.write(asc.reverse()+"<br>");
+        
+    </script>
+
+    <script>
+        var c= ["Vishal","Akash","Rohit","Ramesh","Ved","Bhavesh","Chaitan"];
+        c.pop();
+        document.write(c+"<br>");
+        c.push("garud");
+        document.write(c+"<br>");
+        c.shift();
+        // removes first element
+        document.write(c+"<br>");
+        c.unshift("Vedant");
+        // adds element at first position
+        document.write(c+"<br>");
+
+    </script>
+
+    <script>
+        c.concat(a);
+        c.concat(b);
+        document.write(c+"<br>");
+
+        var d= c;
+        d=c.join("/")
+        document.write(d+"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .calculator {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      background: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="calculator">
+    <h3 class="text-center mb-3">Calculator</h3>
+    <form id="calcFor" name="myform">
+      <!-- Number 1 -->
+      <div class="mb-3">
+        <label for="num1" class="form-label">Enter Number 1</label>
+        <input type="number" class="form-control" id="num1" name="n1" required>
+      </div>
+
+      <!-- Number 2 -->
+      <div class="mb-3">
+        <label for="num2" class="form-label">Enter Number 2</label>
+        <input type="number" class="form-control" id="num2" name="n2" required>
+      </div>
+
+      <!-- Result -->
+      <div class="mb-3">
+        <label for="res" class="form-label">Result</label>
+        <input type="text" class="form-control" id="result" name="res" readonly>
+      </div>
+
+      <!-- Operator Buttons -->
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-success w-25" onclick="add()">+</button>
+        <button type="button" class="btn btn-primary w-25" onclick="sub()">-</button>
+        <button type="button" class="btn btn-warning w-25" onclick="mul()">*</button>
+        <button type="button" class="btn btn-danger w-25" onclick="div()">/</button>
+        <button type="button" class="btn btn-danger w-25">/</button>
+
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function add(){
+        let a = Number(document.myform.n1.value);
+        let b = Number(document.myform.n2.value);
+        document.myform.res.value = a + b;
+    }
+
+    function sub(){
+        let a = Number(document.myform.n1.value);
+        let b = Number(document.myform.n2.value);
+        document.myform.res.value = a - b;
+    }
+
+    function mul(){
+        let a = Number(document.myform.n1.value);
+        let b = Number(document.myform.n2.value);
+        document.myform.res.value = a * b;
+    }
+
+    function div(){
+        let a = Number(document.myform.n1.value);
+        let b = Number(document.myform.n2.value);
+        document.myform.res.value = (b !== 0) ? (a / b) : "Error (÷0)";
+    }
+  </script>
+
+</body>
+</html>

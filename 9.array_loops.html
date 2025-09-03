@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var mixArr = [1, "Veadant", true, 45,50];
+        document.writeln("<b>Full Array </b>"+mixArr)
+    </script>
+
+    <script>
+        var array=[10,20,30,40,50];
+        var sum = 0;
+            document.writeln("<h2>Using for loop</h2> <ul>")
+
+        for(var i=0;i<array.length;i++){
+            sum +=array[i]
+
+            document.writeln("<li>"+array[i]+"</li>")
+
+        }
+        document.write("</ul>");
+        document.write("Sum is : "+ sum)
+
+
+
+
+
+        var sum1=0;
+
+        var j=0;
+        document.writeln("<h2>Using while loop</h2><ul>");
+        while(j<array.length){
+            sum1+=array[j];
+            document.writeln("<li>"+array[j]+"</li>");
+            j++;
+        }
+        document.write("</ul>");
+        document.write("Sum is : "+ sum1);
+
+
+
+
+        // do(
+        //     var sum2=0;
+        //     var k=0;
+        // document.writeln("<h2>Using while loop</h2><ul>");
+        // {
+        //     sum2+=array[k];
+        //     document.writeln("<li>"+array[k]+"</li>");
+        //     k++;
+        // }
+        // document.write("</ul>");
+        // document.write("Sum is : "+ sum2);)while(j<array.length)
+    </script>
+</body>
+</html>

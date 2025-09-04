@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Example</title>
+</head>
+<body>
+    
+    <script>
+        var a={
+            fname:"Vedant",
+            lname:"Gade",
+            age:20,
+            course:"BCS",
+            email:"vedantgade0000@gmail.com",
+            players:["Ronaldo","Messi","Neymar","Mbappe"],
+            address:{
+                city:"Pune",
+                state:"Maharashtra",
+                country:"India"
+            } ,
+            phone:9028345904
+        };
+
+        document.write("My Name is "+a.fname,
+        " My Age is "+a.age+"<br>",
+        "My Fav Player is "+a.players[2]+"<br>",
+        "My Country is "+a.address.country+"<br>" ); 
+    </script>
+
+    <script>
+        var employee=[{name:"Vedant",age:20,salary:20000},
+        {name:"Vishal",age:21,salary:25000},
+        {name:"Rohit",age:22,salary:30000}, 
+        {name:"Ramesh",age:23,salary:35000},
+        {name:"Akash",age:24,salary:40000},
+        {name:"Bhavesh",age:25,salary:45000},
+        {name:"Chaitan",age:26,salary:50000},
+        {name:"Sanket",age:27,salary:55000}
+    ];
+
+    console.log(employee);
+
+    for(let i=0;i<employee.length;i++){
+        document.write("Employee Name is "+employee[i].name+"<br>",
+        "Employee Age is "+employee[i].age+"<br>",
+        "Employee Salary is "+employee[i].salary+"<br><br>");
+    }
+    </script>
+</body>
+</html>
